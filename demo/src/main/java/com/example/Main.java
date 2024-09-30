@@ -36,9 +36,9 @@ public class Main {
                 for (int dato : datos){
                     sumaCuadrados += Math.pow(dato - media,2);
                 }
-                 int  varianza = sumaCuadrados / datos.length;
-                 double desviacionEstandar = Math.sqrt(varianza);
-                 System.out.println("la desviacion estandar es: " + desviacionEstandar);
+                int  varianza = sumaCuadrados / datos.length;
+                double desviacionEstandar = Math.sqrt(varianza);
+                System.out.println("la desviacion estandar es: " + desviacionEstandar);
                     
                     break;
                     case 2:
