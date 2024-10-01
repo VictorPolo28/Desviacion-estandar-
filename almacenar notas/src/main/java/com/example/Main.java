@@ -48,7 +48,7 @@ public class Main {
             for (Double nota : notasEstudiantes.get(i)) {
                 System.out.println(nota + " "); 
             }
-System.out.println("Fin");
+
         }
         input.close();
     }
