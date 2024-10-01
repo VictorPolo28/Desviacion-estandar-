@@ -50,7 +50,7 @@ public class Main {
                 System.out.println("Opcion  invalida. ");
                     break;
             }
-            System.out.println("fin");
+            
         }
     }
 }
