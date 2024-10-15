@@ -10,10 +10,12 @@ public class Main {
         String  edades = informacion.nextLine();
         String[] numeros = edades.split("-");
         int [] datos  = new int[numeros.length];
+        int datosValidos = 0;
         
         for (int i = 0 ; i < numeros.length; i++ ){
             try{
                 datos[i] = Integer.parseInt(numeros [i]);
+                datosValidos++ ; 
             }catch (NumberFormatException e){
                 System.out.println("Entrada invalida. Debe ser un numero");
             }
@@ -31,12 +33,12 @@ public class Main {
                 for (int dato : datos ){
                     suma += dato;
                 }
-                int media = suma / datos.length;
+                int media = suma / datosValidos;
                 int sumaCuadrados = 0;
                 for (int dato : datos){
                     sumaCuadrados += Math.pow(dato - media,2);
                 }
-                int  varianza = sumaCuadrados / datos.length;
+                int  varianza = sumaCuadrados / datosValidos;
                 double desviacionEstandar = Math.sqrt(varianza);
                 System.out.println("la desviacion estandar es: " + desviacionEstandar);
                     
